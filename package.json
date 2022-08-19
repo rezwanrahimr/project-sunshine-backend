@@ -1,0 +1,24 @@
+{
+  "name": "project-sunshine-backend",
+  "version": "1.0.0",
+  "description": "\"# project-sunshine-backend\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "start -dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezwanrahimr/project-sunshine-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rezwanrahimr/project-sunshine-backend/issues"
+  },
+  "homepage": "https://github.com/rezwanrahimr/project-sunshine-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
