@@ -5,7 +5,6 @@ const cors = require('cors');
 require('dotenv').config();
 
 // midle ware
-
 app.use(cors());
 app.use(express.json());
 
@@ -16,9 +15,9 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://project-sunshineTwo:F08nDbXrHCLbxUJX@cluster0.buxdo.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
-function run(){
+async function run(){
     try{
-        client.connect();
+        await client.connect();
         const serviceCollaction = client.db('services').collection('service');
         
         app.get('/services',async(req,res)=>{
